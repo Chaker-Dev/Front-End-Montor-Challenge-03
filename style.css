@@ -1,0 +1,101 @@
+:root {
+   --very-dark-blue: hsl(212, 21%, 14%);
+   --dark-grayish-blue: hsl(228, 12%, 48%);
+   --white: hsl(0, 0%, 100%);
+   --antique-white:rgb(243,234,227);
+   --dark-cyan: hsl(158, 36%, 37%);
+   --cream: hsl(30, 38%, 92%);
+}
+body {
+    background-color: var(--antique-white);
+    font-family: Montserrat;
+    color: var(--dark-grayish-blue);
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 90vw;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+.product-info {
+    display: grid;
+    padding: 20px 5%;
+}
+.product-info > span {
+    letter-spacing: 5px;
+}
+.product-info > h1 {
+    font-family: Fraunces;
+    font-size: 2em;
+    color: var(--very-dark-blue);
+    margin: 0;
+    padding-top: 10px;
+}
+
+.product-info > p {
+   font-size: 14px;
+   line-height: 1.5;
+}
+img {
+    max-height: 40%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit:cover;
+}
+.price{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.new-price{
+    font-size: 2rem;
+    font-family: Fraunces;
+    color:var(--dark-cyan)
+}
+.last-price {
+    text-decoration:line-through;
+    margin-left: 15px;
+}
+button {
+    background: url(/images/icon-cart.svg) no-repeat 22% ;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+.attribution { 
+     padding-top: 20px;
+     font-size: 11px;
+     text-align: center;
+     }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+ @media screen and (min-width : 376px) {
+    section {
+        height: 70vh;
+        width: 37vw;
+        flex-direction: row;
+    }
+    img {
+        min-height: 100%;
+        max-width: 50%;
+        border-radius: 10px 0 0 10px;
+        object-fit:cover;
+    }
+}
