@@ -86,7 +86,7 @@ button {
 .attribution a { 
     color: hsl(228, 45%, 44%);
  }
- @media screen and (min-width : 376px) {
+ @media screen and (min-width : 768px) {
     section {
         height: 70vh;
         width: 37vw;
