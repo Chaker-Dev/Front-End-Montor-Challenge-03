@@ -69,7 +69,7 @@ img {
     margin-left: 15px;
 }
 button {
-    background: url(/images/icon-cart.svg) no-repeat 22% ;
+    background: url(./images/icon-cart.svg) no-repeat 22% ;
     background-color: var(--dark-cyan);
     color: var(--white);
     border: none;
