@@ -89,7 +89,7 @@ button {
     font-weight: 500;
     font-size: 1rem;
     border-radius: 5px;
-    min-height:3vw;
+    min-height:2.5vw;
     max-width: 100%;
 }
 .icon-btn{
@@ -113,8 +113,8 @@ footer {
 
  @media screen and (min-width : 1200px) {
     section {
-        height: 54vh;
-        width: 38vw;
+        height: 52vh;
+        width: 39vw;
         flex-direction: row;
     }
     img {
