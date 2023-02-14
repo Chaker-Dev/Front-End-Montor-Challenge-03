@@ -7,12 +7,16 @@
    --cream: hsl(30, 38%, 92%);
    --text-size : 0.875rem;
 }
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
 body {
     background-color: var(--antique-white);
     font-family: Montserrat;
     color: var(--dark-grayish-blue);
-    margin: 0;
-    padding: 0;
 }
 main {
     display: flex;
@@ -25,31 +29,34 @@ main {
 section {
     display: flex;
     flex-direction: column;
-    height: 90vh;
-    max-width: 700px;
+    max-height:60vh;
+    max-width: 40vw;
     background-color: var(--white);
     border-radius: 10px;
     word-wrap: break-word;
 }
 .product-info {
     display: grid;
-    padding: 20px 5%;
+    padding: 30px 5% 10px;
    
 }
 .product-info > span {
+    text-transform: uppercase;
     letter-spacing: 5px;
+    font-size: 0.8rem;
 }
 .product-info > h1 {
     font-family: Fraunces;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--very-dark-blue);
-    margin: 0 10px 0 0;
-    padding-top: 10px;
+    margin: 0 5px 0 0;
+    line-height: 1;
 }
 
 .product-info > p {
    font-size: var(--text-size);
    line-height: 1.5;
+   font-size: 0.7rem;
 }
 img {
     max-height: 40%;
@@ -59,11 +66,11 @@ img {
 }
 .price{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     align-items: center;
 }
 .new-price{
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-family: Fraunces;
     color:var(--dark-cyan)
 }
@@ -77,10 +84,10 @@ button {
     background-color: var(--dark-cyan);
     color: var(--white);
     border: none;
-    padding: 10px;
+    margin: 10px;
     font-weight: 500;
-    font-size: 1.2rem;
-    border-radius: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
     max-height:3rem;
 }
 .icon-btn{
@@ -114,4 +121,13 @@ footer {
         border-radius: 10px 0 0 10px;
         object-fit:cover;
     }
+    .product-info > h1{
+        font-size: 1.9rem;
+    }
+    .product-info > p {
+        font-size: 0.875rem
+     }
+     .new-price{
+       font-size: 1.8rem;
+     }
 }
