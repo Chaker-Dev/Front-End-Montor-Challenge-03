@@ -113,7 +113,7 @@ footer {
 
  @media screen and (min-width : 1200px) {
     section {
-        height: 57vh;
+        height: 54vh;
         width: 38vw;
         flex-direction: row;
     }
