@@ -5,6 +5,7 @@
    --antique-white:rgb(243,234,227);
    --dark-cyan: hsl(158, 36%, 37%);
    --cream: hsl(30, 38%, 92%);
+   --text-size : 0.875rem;
 }
 body {
     background-color: var(--antique-white);
@@ -25,27 +26,29 @@ section {
     display: flex;
     flex-direction: column;
     height: 90vh;
-    width: 90vw;
+    max-width: 700px;
     background-color: var(--white);
     border-radius: 10px;
+    word-wrap: break-word;
 }
 .product-info {
     display: grid;
     padding: 20px 5%;
+   
 }
 .product-info > span {
     letter-spacing: 5px;
 }
 .product-info > h1 {
     font-family: Fraunces;
-    font-size: 2em;
+    font-size: 2rem;
     color: var(--very-dark-blue);
-    margin: 0;
+    margin: 0 10px 0 0;
     padding-top: 10px;
 }
 
 .product-info > p {
-   font-size: 14px;
+   font-size: var(--text-size);
    line-height: 1.5;
 }
 img {
@@ -68,8 +71,9 @@ img {
     text-decoration:line-through;
     margin-left: 15px;
 }
+
 button {
-    background: url(./images/icon-cart.svg) no-repeat 22% ;
+    display: block;
     background-color: var(--dark-cyan);
     color: var(--white);
     border: none;
@@ -77,16 +81,28 @@ button {
     font-weight: 500;
     font-size: 1.2rem;
     border-radius: 10px;
+    max-height:3rem;
+}
+.icon-btn{
+    background-image: url(./images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 20px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 .attribution { 
      padding-top: 20px;
-     font-size: 11px;
-     text-align: center;
+     font-size: 0.678rem;
      }
 .attribution a { 
     color: hsl(228, 45%, 44%);
  }
- @media screen and (min-width : 768px) {
+
+ @media screen and (min-width : 1200px) {
     section {
         height: 70vh;
         width: 37vw;
