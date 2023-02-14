@@ -29,7 +29,7 @@ main {
 section {
     display: flex;
     flex-direction: column;
-    max-height:60vh;
+    max-height:80vh;
     max-width: 40vw;
     background-color: var(--white);
     border-radius: 10px;
@@ -37,7 +37,8 @@ section {
 }
 .product-info {
     display: grid;
-    padding: 30px 5% 10px;
+    margin: 30px 5% 20px;
+    font-size: 0.875rem;
    
 }
 .product-info > span {
@@ -47,16 +48,16 @@ section {
 }
 .product-info > h1 {
     font-family: Fraunces;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: var(--very-dark-blue);
-    margin: 0 5px 0 0;
+    margin: 5px 0;
     line-height: 1;
 }
 
 .product-info > p {
    font-size: var(--text-size);
    line-height: 1.5;
-   font-size: 0.7rem;
+   font-size: 0.875rem
 }
 img {
     max-height: 40%;
@@ -66,11 +67,11 @@ img {
 }
 .price{
     display: flex;
-    margin-bottom: 5px;
+    margin:10px 0;
     align-items: center;
 }
 .new-price{
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-family: Fraunces;
     color:var(--dark-cyan)
 }
@@ -88,7 +89,7 @@ button {
     font-weight: 500;
     font-size: 1rem;
     border-radius: 5px;
-    max-height:3rem;
+    min-height:40px;
 }
 .icon-btn{
     background-image: url(./images/icon-cart.svg);
@@ -111,7 +112,7 @@ footer {
 
  @media screen and (min-width : 1200px) {
     section {
-        height: 70vh;
+        height: 60vh;
         width: 37vw;
         flex-direction: row;
     }
